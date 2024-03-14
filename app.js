@@ -65,16 +65,16 @@ const sconto40 = prezzobase * 0.40
 if (eta <= 18 ) {
 
   let  prezzobase = sconto20
-  console.log(prezzobase)
+  console.log('Il prezzo del tuo biglietto è di: ' + sconto20 + ' euro')
 
 }
 
 else if (eta >= 65) {
 
     let prezzobase = sconto40
-    console.log(prezzobase)
+    console.log('Il prezzo del tuo biglietto è di: ' + sconto40 + ' euro')
 }
 
 else {
-    console.log(prezzobase)
+    console.log('Il prezzo del tuo biglietto è di: ' + prezzobase + ' euro')
 }
