@@ -42,14 +42,19 @@ console.log('funziona');
 //BIGLIETTO DLE TRENO CON PROMPT
 
 // chiedo i kilometri da percorrere
-let km = prompt('inserisci i km da percorrere');
-km = parseInt(km);
+// let km = prompt('inserisci i km da percorrere');
+// km = parseInt(km);
 // console.log(km);
 
+const km = parseInt(prompt('inserisci i km da percorrere')) ; // string / null
+console.log(km, typeof km);
 // chiedo l'età
-let eta = prompt('inserisci la tua età');
-eta = parseInt(eta);
-// console.log(eta);
+// let eta = prompt('inserisci la tua età');
+// eta = parseInt(eta);
+// // console.log(eta);
+
+const eta = parseInt(prompt('inserisci la tua età'))
+console.log(eta, typeof eta);
 
 // calcolo prezzo base
 let prezzobase = km * 0.21
