@@ -57,29 +57,25 @@ const eta = parseInt(prompt('inserisci la tua età'))
 console.log(eta, typeof eta);
 
 // calcolo prezzo base
-let prezzobase = km * 0.21
-// console.log(prezzobase);
-
 // calcolo sconto
-// sconto = prezzobase * 0.20 se minorenne o 
-// sconto = prezzobase * 0.40 se over 65
-const sconto20 = prezzobase * 0.20
-const sconto40 = prezzobase * 0.40
+// calcolo prezzofinale
+let prezzobase = km * 0.21
+let sconto = 0
+let prezzofinale = prezzobase - sconto
 
 
 if (eta <= 18 ) {
 
-  let  prezzobase = sconto20
-  console.log('Il prezzo del tuo biglietto è di: ' + sconto20 + ' euro')
+  sconto = prezzobase * 0.2
 
 }
 
-else if (eta >= 65) {
+else if (eta >= 65 ) {
 
-    let prezzobase = sconto40
-    console.log('Il prezzo del tuo biglietto è di: ' + sconto40 + ' euro')
+  sconto = prezzobase * 0.4
+
 }
 
-else {
-    console.log('Il prezzo del tuo biglietto è di: ' + prezzobase + ' euro')
-}
+prezzofinale = prezzobase - sconto
+
+console.log('Il prezzo del tuo biglietto è di: ' + prezzofinale + ' euro')
